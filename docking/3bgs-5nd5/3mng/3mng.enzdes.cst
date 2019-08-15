@@ -1,0 +1,94 @@
+# 3mng cst file made 110218
+
+
+#Thr chain A 44 to oxygen in DTT
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O2 C3 C4
+  TEMPLATE::   ATOM_MAP: 1 residue3: 3mn
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OG1 CB CA
+  TEMPLATE::   ATOM_MAP: 2 residue1: T
+
+  CONSTRAINT:: distanceAB:     3.0   0.3  100  0     
+  CONSTRAINT::    angle_A:   109.5  10.0   10  360. 
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360. 
+# CONSTRAINT::  torsion_A:    21.9  10.0  100  360. 
+# CONSTRAINT:: torsion_AB:    75.5  10.0  100  360. 
+# CONSTRAINT::  torsion_B:    94.5  10.0  100  360. 
+
+CST::END  
+
+#Cys chain A 47 to oxygen of DTT
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O2 C3 C4
+  TEMPLATE::   ATOM_MAP: 1 residue3: 3mn
+
+  TEMPLATE::   ATOM_MAP: 2 atom_type: S
+  TEMPLATE::   ATOM_MAP: 2 residue1: C
+
+  CONSTRAINT:: distanceAB:     3.5   0.3  100  1
+  CONSTRAINT::    angle_A:   109.5  10.0   10  360.
+  CONSTRAINT::    angle_B:   104.5  10.0   10  360.
+# CONSTRAINT::  torsion_A:   -39.1  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   170.3  10.0  100  360.
+# CONSTRAINT::  torsion_B:    60.6  10.0  100  360.
+
+CST::END
+
+#Arg chain A 127 to oxygen in DTT
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O2 C3 C4
+  TEMPLATE::   ATOM_MAP: 1 residue3: 3mn
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: NH2 CZ NH1
+  TEMPLATE::   ATOM_MAP: 2 residue1: R
+
+  CONSTRAINT:: distanceAB:     3.6   0.3  100  0
+  CONSTRAINT::    angle_A:    90.0  10.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:   -94.1  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   153.3  10.0  100  360.
+# CONSTRAINT::  torsion_B:   -20.0  10.0  100  360.
+
+CST::END
+
+#Arg chain A 127 to sulfur in Cys chain A 47
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_type: S
+  TEMPLATE::   ATOM_MAP: 1 residue1: C
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: NH2 CZ NH1
+  TEMPLATE::   ATOM_MAP: 2 residue1: R
+
+  CONSTRAINT:: distanceAB:     3.6   0.3  100  1
+  CONSTRAINT::    angle_A:    90.0  10.0   10  360.
+  CONSTRAINT::    angle_B:   104.5  10.0   10  360.
+# CONSTRAINT::  torsion_A:    81.2  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   -71.9  10.0  100  360.
+# CONSTRAINT::  torsion_B:     9.8  10.0  100  360.
+
+CST::END
+
+
+#Pro chain A 40 to sulfur in cysteine
+
+#CST::BEGIN
+#  TEMPLATE::   ATOM_MAP: 1 atom_type: SG CB CA
+#  TEMPLATE::   ATOM_MAP: 1 residue3: Cys
+
+#  TEMPLATE::   ATOM_MAP: 2 atom_name: C CA CB
+#  TEMPLATE::   ATOM_MAP: 2 residue1: P
+
+#  CONSTRAINT:: distanceAB:    3.8   0.5   500   1
+#  CONSTRAINT::    angle_A:   120.0  10.0  100  360.
+#  CONSTRAINT::    angle_B:   109.5  10.0  100  360.
+# CONSTRAINT::  torsion_A:    68.0  10.0  100  360.
+# CONSTRAINT:: torsion_AB:  -128.5  10.0  100  360.
+# CONSTRAINT::  torsion_B:  -177.1  10.0  100  360.
+
+#CST::END
+

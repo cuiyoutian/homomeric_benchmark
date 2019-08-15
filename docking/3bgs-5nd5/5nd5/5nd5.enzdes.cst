@@ -1,0 +1,92 @@
+# 5nd5 cst file made 110618
+
+
+#Asp chain A 160 coordinating with Mg
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: MG1 O3 P1
+  TEMPLATE::   ATOM_MAP: 1 residue3: 5nd
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OD2 CG OD1
+  TEMPLATE::   ATOM_MAP: 2 residue1: D
+
+  CONSTRAINT:: distanceAB:     2.0   0.3  100  1     
+  CONSTRAINT::    angle_A:    90.0  10.0   10  360. 
+  CONSTRAINT::    angle_B:   120.0  25.0   10  360. 
+# CONSTRAINT::  torsion_A:  -165.4  10.0  100  360. 
+# CONSTRAINT:: torsion_AB:    17.7  10.0  100  360. 
+# CONSTRAINT::  torsion_B:   150.5  10.0  100  360. 
+
+CST::END  
+
+#Ile chain A 192 main carboxyl coordinating with Mg
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: MG1 O3 P1
+  TEMPLATE::   ATOM_MAP: 1 residue3: 5nd
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: O C CA
+  TEMPLATE::   ATOM_MAP: 2 residue1: I
+
+  CONSTRAINT:: distanceAB:     2.0   0.3  100  0
+  CONSTRAINT::    angle_A:    90.0  10.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:   100.6  10.0  100  360.
+# CONSTRAINT:: torsion_AB:  -179.2  10.0  100  360.
+# CONSTRAINT::  torsion_B:    -7.5  10.0  100  360.
+
+CST::END
+
+#Asn chain A 190 coordinating with Mg
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: MG1 O6 P2
+  TEMPLATE::   ATOM_MAP: 1 residue3: 5nd
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OD1 CG ND2
+  TEMPLATE::   ATOM_MAP: 2 residue1: N
+
+  CONSTRAINT:: distanceAB:     2.0   0.3  100  1
+  CONSTRAINT::    angle_A:    90.0  10.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:  -174.7  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   -33.5  10.0  100  360.
+# CONSTRAINT::  torsion_B:    21.1  10.0  100  360.
+
+CST::END
+
+#His chain A 267 coordinating with oxygen in phosphate
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O2 P2 O4
+  TEMPLATE::   ATOM_MAP: 1 residue3: 5nd
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: ND1 CG CB
+  TEMPLATE::   ATOM_MAP: 2 residue1: H 
+
+  CONSTRAINT:: distanceAB:     2.5   0.3  100  0
+  CONSTRAINT::    angle_A:   120.0  10.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:    24.2  10.0  100  360.
+# CONSTRAINT:: torsion_AB:  -149.8  10.0  100  360.
+# CONSTRAINT::  torsion_B:    45.5  10.0  100  360.
+
+CST::END
+
+#Glu chain B 1084 coordinating with N in ring
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: N3 C7 N2
+  TEMPLATE::   ATOM_MAP: 1 residue3: 5nd
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OE2 CD OE1
+  TEMPLATE::   ATOM_MAP: 2 residue1: E
+
+  CONSTRAINT:: distanceAB:     2.5   0.3  100  0
+  CONSTRAINT::    angle_A:   120.0  10.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  20.0   10  360.
+# CONSTRAINT::  torsion_A:  -179.9  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   -16.4  10.0  100  360.
+# CONSTRAINT::  torsion_B:    55.9  10.0  100  360.
+
+CST::END

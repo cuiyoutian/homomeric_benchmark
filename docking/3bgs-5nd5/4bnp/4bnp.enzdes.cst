@@ -1,0 +1,94 @@
+# 4bnp cst file made on 110318
+
+
+#Asp chain A 306 interacting with the Mg
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: MG1 O1 C1
+  TEMPLATE::   ATOM_MAP: 1 residue3: 4bn
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OD1 CG OD2
+  TEMPLATE::   ATOM_MAP: 2 residue1: D
+
+  CONSTRAINT:: distanceAB:     2.0   0.3  100  1     
+  CONSTRAINT::    angle_A:    90.0  10.0   10  360. 
+  CONSTRAINT::    angle_B:   120.0  30.0   10  360. 
+# CONSTRAINT::  torsion_A:   117.2  10.0  100  360. 
+# CONSTRAINT:: torsion_AB:  -167.9  10.0  100  360. 
+# CONSTRAINT::  torsion_B:    15.0  10.0  100  360. 
+
+CST::END  
+
+#Lys chain B 644 bonding with O7
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O7 C2 C1
+  TEMPLATE::   ATOM_MAP: 1 residue3: 4bn
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: NZ CE CD
+  TEMPLATE::   ATOM_MAP: 2 residue1: K
+
+  CONSTRAINT:: distanceAB:     3.2   0.3  100  0
+  CONSTRAINT::    angle_A:   120.0  20.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  30.0   10  360.
+# CONSTRAINT::  torsion_A:  -119.8  10.0  100  360.
+# CONSTRAINT:: torsion_AB:     0.8  10.0  100  360.
+# CONSTRAINT::  torsion_B:  -173.9  10.0  100  360.
+
+CST::END
+
+#Tyr chain A 159 bonding with O6
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O6 C6 C3
+  TEMPLATE::   ATOM_MAP: 1 residue3: 4bn
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OH CZ CE2
+  TEMPLATE::   ATOM_MAP: 2 residue1: Y
+
+  CONSTRAINT:: distanceAB:     2.3   0.3  100  0
+  CONSTRAINT::    angle_A:   120.0  15.0   10  360.
+  CONSTRAINT::    angle_B:   109.5  10.0   10  360.
+# CONSTRAINT::  torsion_A:  -175.1  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   -73.5  10.0  100  360.
+# CONSTRAINT::  torsion_B:     3.8  10.0  100  360.
+
+CST::END
+
+#Tyr chain A 159 interacting with Lys chain B 644
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: NZ CE CD
+  TEMPLATE::   ATOM_MAP: 1 residue1: K
+
+  TEMPLATE::   ATOM_MAP: 2 atom_type: OH CZ CE2
+  TEMPLATE::   ATOM_MAP: 2 residue1: Y
+
+  CONSTRAINT:: distanceAB:     3.4   0.3  100  0
+  CONSTRAINT::    angle_A:    90.0  20.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  20.0   10  360.
+# CONSTRAINT::  torsion_A:   131.1  10.0  100  360.
+# CONSTRAINT:: torsion_AB:    43.9  10.0  100  360.
+# CONSTRAINT::  torsion_B:    63.4  10.0  100  360.
+
+CST::END
+
+#Lys chain B 644 interacting with Asp chain A 306
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: NZ CE CD
+  TEMPLATE::   ATOM_MAP: 1 residue1: K
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OD2 CG OD1
+  TEMPLATE::   ATOM_MAP: 2 residue1: D
+
+  CONSTRAINT:: distanceAB:     2.8   0.3  100  0
+  CONSTRAINT::    angle_A:    90.0  10.0   10  360.
+  CONSTRAINT::    angle_B:   109.5  10.0   10  360.
+# CONSTRAINT::  torsion_A:    76.9  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   119.4  10.0  100  360.
+# CONSTRAINT::  torsion_B:    38.7  10.0  100  360.
+
+CST::END
+
+

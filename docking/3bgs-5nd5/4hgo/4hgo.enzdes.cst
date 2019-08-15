@@ -1,0 +1,147 @@
+# 4hgo cst file made on 110618
+
+
+#Asp chain A 10 coordinating to vandanium
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: P1 O12 C8
+  TEMPLATE::   ATOM_MAP: 1 residue3: 4hg
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OD2 CG OD1
+  TEMPLATE::   ATOM_MAP: 2 residue1: D
+
+  CONSTRAINT:: distanceAB:     2.0   0.3  100  1
+  CONSTRAINT::    angle_A:   180.0  10.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:   -52.7  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   -11.1  10.0  100  360.
+# CONSTRAINT::  torsion_B:     4.8  10.0  100  360.
+
+CST::END
+
+
+#Asp chain A 10 coordinating to Mg
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: MG1 V3 V6
+  TEMPLATE::   ATOM_MAP: 1 residue3: mg4
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OD1 CG OD2
+  TEMPLATE::   ATOM_MAP: 2 residue1: D
+
+  CONSTRAINT:: distanceAB:     2.0   0.3  100  1     
+# CONSTRAINT::    angle_A:    90.0  10.0   10  360. 
+# CONSTRAINT::    angle_B:   120.0  10.0   10  360. 
+# CONSTRAINT::  torsion_A:     5.8  10.0  100  360. 
+# CONSTRAINT:: torsion_AB:    -8.7  10.0  100  360. 
+# CONSTRAINT::  torsion_B:     4.9  10.0  100  360. 
+
+CST::END  
+
+#Asp chain A 12 coordinating to Mg
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: MG1 V2 V5
+  TEMPLATE::   ATOM_MAP: 1 residue3: mg4
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: O C CA
+  TEMPLATE::   ATOM_MAP: 2 residue1: D
+
+  CONSTRAINT:: distanceAB:     2.0   0.3  100  0
+# CONSTRAINT::    angle_A:    90.0  10.0   10  360.
+# CONSTRAINT::    angle_B:   180.0  20.0   10  360.
+# CONSTRAINT::  torsion_A:    96.9  10.0  100  360.
+# CONSTRAINT:: torsion_AB:    31.1  10.0  100  360.
+# CONSTRAINT::  torsion_B:   -36.8  10.0  100  360.
+
+CST::END
+
+#Asp chain A 103 coordinating to Mg
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: MG1 V1 V4
+  TEMPLATE::   ATOM_MAP: 1 residue3: mg4
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OD1 CG OD2
+  TEMPLATE::   ATOM_MAP: 2 residue1: D
+
+  CONSTRAINT:: distanceAB:     2.0   0.3  100  1
+# CONSTRAINT::    angle_A:   180.0  20.0   10  360.
+# CONSTRAINT::    angle_B:   120.0  15.0   10  360.
+# CONSTRAINT::  torsion_A:   -45.8  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   179.9  10.0  100  360.
+# CONSTRAINT::  torsion_B:    21.0  10.0  100  360.
+
+CST::END
+
+#Thr chain A 54 coordinating with oxygen on vandium
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O2 P1 O1
+  TEMPLATE::   ATOM_MAP: 1 residue3: 4hg
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OG1 CB CA
+  TEMPLATE::   ATOM_MAP: 2 residue1: T
+
+  CONSTRAINT:: distanceAB:     2.5   0.3  100  0
+  CONSTRAINT::    angle_A:   109.5  10.0   10  360.
+# CONSTRAINT::    angle_B:   104.5  10.0   10  360.
+# CONSTRAINT::  torsion_A:    20.0  10.0  100  360.
+# CONSTRAINT:: torsion_AB:  -105.2  10.0  100  360.
+# CONSTRAINT::  torsion_B:    83.2  10.0  100  360.
+
+CST::END
+
+#Lys chain A 80 coordinating with oxygen on vandium
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O3 P1 O1
+  TEMPLATE::   ATOM_MAP: 1 residue3: 4hg
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: NZ CE CD
+  TEMPLATE::   ATOM_MAP: 2 residue1: K
+
+  CONSTRAINT:: distanceAB:     2.5   0.3  100  0
+  CONSTRAINT::    angle_A:   120.0  10.0   10  360.
+# CONSTRAINT::    angle_B:   104.5  10.0   10  360.
+# CONSTRAINT::  torsion_A:   118.9  10.0  100  360.
+# CONSTRAINT:: torsion_AB:  -109.2  10.0  100  360.
+# CONSTRAINT::  torsion_B:  -177.5  10.0  100  360.
+
+CST::END
+
+#Asp chain A 12 coordinating to oxygen on C8
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O12 C8 C7
+  TEMPLATE::   ATOM_MAP: 1 residue3: 4hg
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OD1 CG OD2
+  TEMPLATE::   ATOM_MAP: 2 residue1: D
+
+  CONSTRAINT:: distanceAB:     3.0   0.3  100  0
+# CONSTRAINT::    angle_A:   120.0  30.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:    83.7  10.0  100  360.
+# CONSTRAINT:: torsion_AB:    16.8  10.0  100  360.
+# CONSTRAINT::  torsion_B:  -148.4  10.0  100  360.
+
+CST::END
+
+#Mg coordinating to oxygen in vanadium
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: MG1 V3 V6
+  TEMPLATE::   ATOM_MAP: 1 residue3: mg4
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: O1 P1 O2
+  TEMPLATE::   ATOM_MAP: 2 residue3: 4hg
+
+  CONSTRAINT:: distanceAB:     2.0   0.3  100  1
+# CONSTRAINT::    angle_A:    90.0  10.0   10  360.
+# CONSTRAINT::    angle_B:   120.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:     5.8  10.0  100  360.
+# CONSTRAINT:: torsion_AB:    -8.7  10.0  100  360.
+# CONSTRAINT::  torsion_B:     4.9  10.0  100  360.
+
+CST::END

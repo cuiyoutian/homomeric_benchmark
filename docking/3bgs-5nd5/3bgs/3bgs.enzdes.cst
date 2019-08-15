@@ -1,0 +1,110 @@
+# 3bgs cst file made on 103118
+
+
+#His chain A 86 coordinating with the phosphate
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O4 P1 O1 
+  TEMPLATE::   ATOM_MAP: 1 residue3: 3bg
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: NE2 CE1 ND1
+  TEMPLATE::   ATOM_MAP: 2 residue1: H
+
+  CONSTRAINT:: distanceAB:     2.8   0.3  100  0     
+  CONSTRAINT::    angle_A:   120.0  10.0   10  360. 
+  CONSTRAINT::    angle_B:   109.5  10.0   10  360. 
+# CONSTRAINT::  torsion_A:  -157.3  10.0  100  360. 
+# CONSTRAINT:: torsion_AB:  -143.2  10.0  100  360. 
+# CONSTRAINT::  torsion_B:  -160.9  10.0  100  360. 
+
+CST::END  
+
+#Asn chain A 243 NH coordinating with carbonyl
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O7 C9 N2
+  TEMPLATE::   ATOM_MAP: 1 residue3: 3bg
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: ND2 CG OD1
+  TEMPLATE::   ATOM_MAP: 2 residue1: N
+
+  CONSTRAINT:: distanceAB:     3.0   0.3  100  0
+  CONSTRAINT::    angle_A:   120.0  10.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:  -178.2  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   -11.5  10.0  100  360.
+# CONSTRAINT::  torsion_B:     0.3  10.0  100  360.
+
+CST::END
+
+#Asn chain A 243 carbonyl coordinating to nitrogen of pyrroline
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: N4 C10 C11
+  TEMPLATE::   ATOM_MAP: 1 residue3: 3bg
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OD1 CG ND2 
+  TEMPLATE::   ATOM_MAP: 2 residue1: N
+
+  CONSTRAINT:: distanceAB:     2.8   0.3  100  0
+  CONSTRAINT::    angle_A:   120.0  10.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:   170.7  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   162.2  10.0  100  360.
+# CONSTRAINT::  torsion_B:    16.6  10.0  100  360.
+
+CST::END
+
+#Glu chain A 89 stabilizing His chain A 86
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: ND1 CE1 NE2
+  TEMPLATE::   ATOM_MAP: 1 residue1: H
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OE1 CD OE2
+  TEMPLATE::   ATOM_MAP: 2 residue1: E
+
+  CONSTRAINT:: distanceAB:    2.8   0.3   100  0
+  CONSTRAINT::    angle_A:   120.0  20.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  25.0   10  360.
+# CONSTRAINT::  torsion_A:  -174.9  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   -99.8  10.0  100  360.
+# CONSTRAINT::  torsion_B:   126.3  10.0  100  360.
+
+CST::END
+
+#Ala chain A 116 backbone coordinating to phosphate
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O1 P1 O4
+  TEMPLATE::   ATOM_MAP: 1 residue3: 3bg
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: N CA CB
+  TEMPLATE::   ATOM_MAP: 2 residue1: A
+
+  CONSTRAINT:: distanceAB:    3.1   0.3   100  0
+  CONSTRAINT::    angle_A:   120.0  10.0   10  360.
+  CONSTRAINT::    angle_B:   109.5  10.0   10  360.
+# CONSTRAINT::  torsion_A:  -168.7  10.0  100  360.
+# CONSTRAINT:: torsion_AB:  -161.0  10.0  100  360.
+# CONSTRAINT::  torsion_B:   -43.8  10.0  100  360.
+
+CST::END
+
+#Arg chain A 84 coordinating to phosphate
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O2 P1 O1
+  TEMPLATE::   ATOM_MAP: 1 residue3: 3bg
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: NH2 CZ NH1
+  TEMPLATE::   ATOM_MAP: 2 residue1: R
+
+  CONSTRAINT:: distanceAB:    2.7   0.3   100  0
+  CONSTRAINT::    angle_A:   120.0  10.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:   136.6  10.0  100  360.
+# CONSTRAINT:: torsion_AB:    57.8  10.0  100  360.
+# CONSTRAINT::  torsion_B:  -147.3  10.0  100  360.
+
+CST::END

@@ -1,0 +1,92 @@
+# 4fua cst file made on 110418
+
+
+#His chain A 92 coordinating to Zn
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: ZN1 O5 C1
+  TEMPLATE::   ATOM_MAP: 1 residue3: 4fu
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: NE2 CD2 CG
+  TEMPLATE::   ATOM_MAP: 2 residue1: H
+
+  CONSTRAINT:: distanceAB:     2.0   0.3  100  0
+  CONSTRAINT::    angle_A:    90.0  10.0  100  360. 
+  CONSTRAINT::    angle_B:   120.0  10.0  100  360. 
+# CONSTRAINT::  torsion_A:  -121.7  10.0  100  360. 
+# CONSTRAINT:: torsion_AB:    28.8  10.0  100  360. 
+# CONSTRAINT::  torsion_B:   177.5  10.0  100  360. 
+
+CST::END  
+
+#His chain A 94 coordinating to Zn
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: ZN1 O5 C1
+  TEMPLATE::   ATOM_MAP: 1 residue3: 4fu
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: NE2 CD2 CG 
+  TEMPLATE::   ATOM_MAP: 2 residue1: H
+
+  CONSTRAINT:: distanceAB:     2.0   0.3  100  0
+  CONSTRAINT::    angle_A:    90.0  10.0  100  360.
+  CONSTRAINT::    angle_B:   120.0  10.0  100  360.
+# CONSTRAINT::  torsion_A:   137.0  10.0  100  360.
+# CONSTRAINT:: torsion_AB:    88.5  10.0  100  360.
+# CONSTRAINT::  torsion_B:  -169.1  10.0  100  360.
+
+CST::END
+
+#His chain A 155 coordinating to Zn
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: ZN1 O6 N1
+  TEMPLATE::   ATOM_MAP: 1 residue3: 4fu
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: NE2 CD2 CG
+  TEMPLATE::   ATOM_MAP: 2 residue1: H
+
+  CONSTRAINT:: distanceAB:     2.0   0.3  100  0
+  CONSTRAINT::    angle_A:    90.0  10.0  100  360.
+  CONSTRAINT::    angle_B:   120.0  10.0  100  360.
+# CONSTRAINT::  torsion_A:  -158.8  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   169.5  10.0  100  360.
+# CONSTRAINT::  torsion_B:  -177.4  10.0  100  360.
+
+CST::END
+
+#Glu chain A 73 interacting with oxygen O6
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O6 N1 C1
+  TEMPLATE::   ATOM_MAP: 1 residue3: 4fu
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OE2 CD OE1
+  TEMPLATE::   ATOM_MAP: 2 residue1: E
+
+  CONSTRAINT:: distanceAB:     2.5   0.3  100  1
+  CONSTRAINT::    angle_A:   109.5  10.0  100  360.
+  CONSTRAINT::    angle_B:   120.0  10.0  100  360.
+# CONSTRAINT::  torsion_A:   161.3  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   -70.5  10.0  100  360.
+# CONSTRAINT::  torsion_B:  -163.9  10.0  100  360.
+
+CST::END
+
+#Tyr chain B 328 coordinating to Zn
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: ZN1 O5 C1
+  TEMPLATE::   ATOM_MAP: 1 residue3: 4fu
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OH CZ CE1
+  TEMPLATE::   ATOM_MAP: 2 residue1: Y
+
+  CONSTRAINT:: distanceAB:     3.5   0.3  100  1
+  CONSTRAINT::    angle_A:    90.0  10.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  20.0   10  360.
+# CONSTRAINT::  torsion_A:  -158.8  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   169.5  10.0  100  360.
+# CONSTRAINT::  torsion_B:  -177.4  10.0  100  360.
+
+CST::END

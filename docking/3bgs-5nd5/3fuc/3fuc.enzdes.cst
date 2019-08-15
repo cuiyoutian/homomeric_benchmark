@@ -1,0 +1,111 @@
+# 3fuc cst file made on 103118
+
+
+#His chain A 76 interacting oxygen of phosphate
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O2 P1 O3
+  TEMPLATE::   ATOM_MAP: 1 residue3: 3fu
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: NE2 CE1 ND1
+  TEMPLATE::   ATOM_MAP: 2 residue1: H
+
+  CONSTRAINT:: distanceAB:     3.0   0.5  100  0     
+  CONSTRAINT::    angle_A:   120.0  10.0   10  360. 
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360. 
+# CONSTRAINT::  torsion_A:  -145.6  10.0  100  360. 
+# CONSTRAINT:: torsion_AB:   128.0  10.0  100  360. 
+# CONSTRAINT::  torsion_B:   177.4  10.0  100  360. 
+
+CST::END  
+
+#Glu chain A 79 interacting with His chain A 76
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: ND1 CE1 NE2
+  TEMPLATE::   ATOM_MAP: 1 residue1: H
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OE2 CD OE1
+  TEMPLATE::   ATOM_MAP: 2 residue1: E
+
+  CONSTRAINT:: distanceAB:     2.8   0.3  100  0
+  CONSTRAINT::    angle_A:   120.0  20.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:  -164.2  10.0  100  360.
+# CONSTRAINT:: torsion_AB:  -100.4  10.0  100  360.
+# CONSTRAINT::  torsion_B:   119.8  10.0  100  360.
+
+CST::END
+
+#Ala chain A 106  interacting with phosphate
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O3 P1 O2
+  TEMPLATE::   ATOM_MAP: 1 residue3: 3fu
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: N CA CB
+  TEMPLATE::   ATOM_MAP: 2 residue1: A
+
+  CONSTRAINT:: distanceAB:     3.1   0.3  100  0
+  CONSTRAINT::    angle_A:   120.0  10.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:  -142.1  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   -98.9  10.0  100  360.
+# CONSTRAINT::  torsion_B:   -20.3  10.0  100  360.
+
+CST::END
+
+#Arg chain A 74 interacting with phosphate
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O2 P1 O3
+  TEMPLATE::   ATOM_MAP: 1 residue3: 3fu
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: NH1 CZ NH2
+  TEMPLATE::   ATOM_MAP: 2 residue1: R
+
+  CONSTRAINT:: distanceAB:     2.9   0.3  100  0
+  CONSTRAINT::    angle_A:   109.5  10.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:    79.4  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   124.9  10.0  100  360.
+# CONSTRAINT::  torsion_B:  -157.4  10.0  100  360.
+
+CST::END
+
+
+#Asn chain A 233 OD1 interacting with N
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: N4 C3 C4
+  TEMPLATE::   ATOM_MAP: 1 residue3: 3fu
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OD1 CG ND2
+  TEMPLATE::   ATOM_MAP: 2 residue1: N
+
+  CONSTRAINT:: distanceAB:     2.8   0.3  100  0
+  CONSTRAINT::    angle_A:   120.0  10.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:    11.1  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   -32.3  10.0  100  360.
+# CONSTRAINT::  torsion_B:    16.0  10.0  100  360.
+
+CST::END
+
+#Asn chain A 233 ND2 interacting with O
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O4 C4 C3
+  TEMPLATE::   ATOM_MAP: 1 residue3: 3fu
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: ND2 CG OD1
+  TEMPLATE::   ATOM_MAP: 2 residue1: N
+
+  CONSTRAINT:: distanceAB:     3.0   0.3  100  0
+  CONSTRAINT::    angle_A:   120.0  10.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:     5.7  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   -22.1  10.0  100  360.
+# CONSTRAINT::  torsion_B:     4.9  10.0  100  360.
+
+CST::END
