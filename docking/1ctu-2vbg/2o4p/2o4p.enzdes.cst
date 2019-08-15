@@ -1,0 +1,40 @@
+# 2o4p cst file made on 123118
+
+#Asp chain A 25 carbonyl bonding OH of ligand
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O3 C3 C2
+  TEMPLATE::   ATOM_MAP: 1 residue3: 2o4
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OD2 CG OD1
+  TEMPLATE::   ATOM_MAP: 2 residue1: D
+
+  CONSTRAINT:: distanceAB:     2.4   0.3  100  0     
+  CONSTRAINT::    angle_A:   109.5  10.0   10  360. 
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360. 
+# CONSTRAINT::  torsion_A:   124.4  10.0  100  360. 
+# CONSTRAINT:: torsion_AB:   161.3  10.0  100  360. 
+# CONSTRAINT::  torsion_B:    -8.7  10.0  100  360. 
+
+CST::END  
+
+
+#Asp chain B 124 oxygen bonding with hydroxide
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O3 C3 C2
+  TEMPLATE::   ATOM_MAP: 1 residue3: 2o4
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OD2 CG OD1
+  TEMPLATE::   ATOM_MAP: 2 residue1: D
+
+  CONSTRAINT:: distanceAB:     2.4   0.3  100  0
+  CONSTRAINT::    angle_A:   120.0  10.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:  -104.7  10.0  100  360.
+# CONSTRAINT:: torsion_AB:  -102.3  10.0  100  360.
+# CONSTRAINT::  torsion_B:     7.8  10.0  100  360.
+
+CST::END
+
+

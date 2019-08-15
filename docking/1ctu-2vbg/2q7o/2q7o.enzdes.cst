@@ -1,0 +1,74 @@
+# 2q7o made on 103118
+
+#Ala chain A 116 backbone coordinating to PO4
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O2 P1 O1 
+  TEMPLATE::   ATOM_MAP: 1 residue3: 2q7
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: N CA CB
+  TEMPLATE::   ATOM_MAP: 2 residue1: A
+
+  CONSTRAINT:: distanceAB:     3.7   0.3  100  0     
+  CONSTRAINT::    angle_A:   180.0  10.0   10  360. 
+  CONSTRAINT::    angle_B:   109.5  10.0   10  360. 
+# CONSTRAINT::  torsion_A:   -33.0  10.0  100  360. 
+# CONSTRAINT:: torsion_AB:    73.8  10.0  100  360. 
+# CONSTRAINT::  torsion_B:   -83.6  10.0  100  360. 
+
+CST::END  
+
+#Asn chain A 243 NH coordinating with carbonyl
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O8 C9 N2
+  TEMPLATE::   ATOM_MAP: 1 residue3: 2q7
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: ND2 CG OD1
+  TEMPLATE::   ATOM_MAP: 2 residue1: N
+
+  CONSTRAINT:: distanceAB:     3.2   0.3  100  0
+  CONSTRAINT::    angle_A:   120.0  10.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:  -171.2  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   -18.2  10.0  100  360.
+# CONSTRAINT::  torsion_B:     0.4  10.0  100  360.
+
+CST::END
+
+#Asn chain A 243 carbonyl coordinating to nitrogen of pyrroline
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: N4 C10 C11
+  TEMPLATE::   ATOM_MAP: 1 residue3: 2q7
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OD1 CG ND2 
+  TEMPLATE::   ATOM_MAP: 2 residue1: N
+
+  CONSTRAINT:: distanceAB:     3.0   0.3  100  0
+  CONSTRAINT::    angle_A:   120.0  10.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:   176.5  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   162.0  10.0  100  360.
+# CONSTRAINT::  torsion_B:    15.1  10.0  100  360.
+
+CST::END
+
+#Met chain A 219 coordinating to SO4
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O3 P1 O1
+  TEMPLATE::   ATOM_MAP: 1 residue3: 2q7
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: N CA CB
+  TEMPLATE::   ATOM_MAP: 2 residue1: M
+
+  CONSTRAINT:: distanceAB:    2.6   0.3   100   0
+  CONSTRAINT::    angle_A:   120.0  15.0   10  360.
+  CONSTRAINT::    angle_B:   109.5  10.0   10  360.
+# CONSTRAINT::  torsion_A:     2.4  10.0  100  360.
+# CONSTRAINT:: torsion_AB:    87.3  10.0  100  360.
+# CONSTRAINT::  torsion_B:   -89.2  10.0  100  360.
+
+CST::END
+
