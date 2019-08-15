@@ -1,0 +1,38 @@
+
+<dock_design>
+   <TASKOPERATIONS>
+   </TASKOPERATIONS>
+   <SCOREFXNS>
+       <stage1 weights=stage1 symmetric=1>
+                       <Reweight scoretype=atom_pair_constraint weight=0.5/>
+               </stage1>
+       <stage2 weights=stage2 symmetric=1>
+                       <Reweight scoretype=atom_pair_constraint weight=0.5/>
+               </stage2>
+       <fullatom weights=stage3 symmetric=1>
+                       <Reweight scoretype=atom_pair_constraint weight=0.5/>
+               </fullatom>
+   </SCOREFXNS>
+ <FILTERS>
+   </FILTERS>
+   <MOVERS>
+   <Hybridize name=hybridize fa_cst_file="alignment.grishin.dist_csts.CA" stage1_scorefxn=stage1 stage2_scorefxn=stage2 fa_scorefxn=fullatom batch=1 stage1_increase_cycles=1.0 stage2_increase_cycles=1.0 linmin_only=1>; 
+ <Template pdb="/path/to/templates/3fzn/4q9d_INPUT.pdb.pdb" cst_file="alignment.grishin.dist_csts.CA" weight=1.00 symmdef="/path/to/templates/3fzn/4q9d.symm" />"; 
+ <Template pdb="/path/to/templates/3fzn/4k9q_INPUT.pdb.pdb" cst_file="alignment.grishin.dist_csts.CA" weight=0.95 symmdef="/path/to/templates/3fzn/4q9d.symm" />"; 
+ <Template pdb="/path/to/templates/3fzn/2pan_INPUT.pdb.pdb" cst_file="alignment.grishin.dist_csts.CA" weight=0.53 symmdef="/path/to/templates/3fzn/4q9d.symm" />"; 
+ <Template pdb="/path/to/templates/3fzn/1jsc_INPUT.pdb.pdb" cst_file="alignment.grishin.dist_csts.CA" weight=0.52 symmdef="/path/to/templates/3fzn/4q9d.symm" />"; 
+ <Template pdb="/path/to/templates/3fzn/5fem_INPUT.pdb.pdb" cst_file="alignment.grishin.dist_csts.CA" weight=0.52 symmdef="/path/to/templates/3fzn/4q9d.symm" />"; 
+ <Template pdb="/path/to/templates/3fzn/3iae_INPUT.pdb.pdb" cst_file="alignment.grishin.dist_csts.CA" weight=0.52 symmdef="/path/to/templates/3fzn/4q9d.symm" />"; 
+ <Template pdb="/path/to/templates/3fzn/2uz1_INPUT.pdb.pdb" cst_file="alignment.grishin.dist_csts.CA" weight=0.51 symmdef="/path/to/templates/3fzn/4q9d.symm" />"; 
+ <Template pdb="/path/to/templates/3fzn/3d7k_INPUT.pdb.pdb" cst_file="alignment.grishin.dist_csts.CA" weight=0.51 symmdef="/path/to/templates/3fzn/4q9d.symm" />"; 
+ <Template pdb="/path/to/templates/3fzn/2ag0_INPUT.pdb.pdb" cst_file="alignment.grishin.dist_csts.CA" weight=0.51 symmdef="/path/to/templates/3fzn/4q9d.symm" />"; 
+ <Template pdb="/path/to/templates/3fzn/4qpz_INPUT.pdb.pdb" cst_file="alignment.grishin.dist_csts.CA" weight=0.51 symmdef="/path/to/templates/3fzn/4q9d.symm" />"; 
+
+       </Hybridize>
+   </MOVERS>
+   <APPLY_TO_POSE>
+   </APPLY_TO_POSE>
+   <PROTOCOLS>
+       <Add mover=hybridize/>
+   </PROTOCOLS>
+</dock_design>"; 
