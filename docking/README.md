@@ -1,4 +1,4 @@
-lignad_mappings: text showing the heavy atom mappings of the ligand crystal strucutre:model to determine the ligand RMSD
+ligand_mappings: text showing the heavy atom mappings of the ligand crystal strucutre:model to determine the ligand RMSD
 
 
 files:
