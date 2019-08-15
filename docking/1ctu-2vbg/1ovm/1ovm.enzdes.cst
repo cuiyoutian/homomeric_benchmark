@@ -1,0 +1,127 @@
+#1ovm cst file made on 072117
+
+#Asp chain A 419 coordinating with Mg
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: MG1 O3 P1
+  TEMPLATE::   ATOM_MAP: 1 residue3: 1ov
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OD1 CG OD2
+  TEMPLATE::   ATOM_MAP: 2 residue1: D
+
+  CONSTRAINT:: distanceAB:    2.1   0.3   100  1     
+# CONSTRAINT::    angle_A:    90.0  10.0   10  360. 
+# CONSTRAINT::    angle_B:   120.0  15.0   10  360. 
+# CONSTRAINT::  torsion_A:  -137.2  10.0  100  360. 
+# CONSTRAINT:: torsion_AB:   171.3  10.0  100  360. 
+# CONSTRAINT::  torsion_B:    59.8  10.0  100  360. 
+
+CST::END  
+
+#Asn chain A 446 coordinating with Mg
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: MG1 O6 P2
+  TEMPLATE::   ATOM_MAP: 1 residue3: 1ov
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OD1 CG ND2
+  TEMPLATE::   ATOM_MAP: 2 residue1: N
+
+  CONSTRAINT:: distanceAB:     2.1   0.3  100  1
+# CONSTRAINT::    angle_A:    90.0  10.0   10  360.
+# CONSTRAINT::    angle_B:   120.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:   135.7  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   -72.9  10.0  100  360.
+# CONSTRAINT::  torsion_B:    25.9  10.0  100  360.
+
+CST::END
+
+#Gly chain A 448 coordinating to Mg
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: MG1 O6 P2
+  TEMPLATE::   ATOM_MAP: 1 residue3: 1ov
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: O C CA
+  TEMPLATE::   ATOM_MAP: 2 residue1: G
+
+  CONSTRAINT:: distanceAB:     2.1   0.3  100  0
+# CONSTRAINT::    angle_A:    90.0  15.0   10  360.
+# CONSTRAINT::    angle_B:   180.0  15.0   10  360.
+# CONSTRAINT::  torsion_A:  -150.0  10.0  100  360.
+# CONSTRAINT:: torsion_AB:   154.1  10.0  100  360.
+# CONSTRAINT::  torsion_B:    54.1  10.0  100  360.
+
+CST::END
+
+#His chain B 648 interacting C8
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: C8 N4 C9
+  TEMPLATE::   ATOM_MAP: 1 residue3: 1ov
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: ND1 CE1 NE2
+  TEMPLATE::   ATOM_MAP: 2 residue1: H
+
+  CONSTRAINT:: distanceAB:    7.4    0.3  100  0
+  CONSTRAINT::    angle_A:   109.5  10.0   10  360.
+  CONSTRAINT::    angle_B:    90.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:  -169.4  10.0  100  360.
+# CONSTRAINT:: torsion_AB:    70.0  10.0  100  360.
+# CONSTRAINT::  torsion_B:   140.2  10.0  100  360.
+
+CST::END
+
+#Glu chain B 585 coordinating to N3
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: N3 C7 N2
+  TEMPLATE::   ATOM_MAP: 1 residue3: 1ov
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OE1 CD OE2
+  TEMPLATE::   ATOM_MAP: 2 residue1: E
+
+  CONSTRAINT:: distanceAB:     2.7  0.3   100  0
+  CONSTRAINT::    angle_A:   120.0  10.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  20.0   10  360.
+# CONSTRAINT::  torsion_A:   163.8  10.0  100  360.
+# CONSTRAINT:: torsion_AB:    28.2  10.0  100  360.
+# CONSTRAINT::  torsion_B:    30.9  10.0  100  360.
+
+CST::END
+
+#His chain B 648 interacting with Asp chain B 562
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: OD2 CG OD1
+  TEMPLATE::   ATOM_MAP: 1 residue1: D
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: NE2 CE1 ND1
+  TEMPLATE::   ATOM_MAP: 2 residue1: H
+
+  CONSTRAINT:: distanceAB:    2.9   0.3   100  0
+  CONSTRAINT::    angle_A:   120.0  20.0   10  360.
+  CONSTRAINT::    angle_B:    90.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:   160.0  10.0  100  360.
+# CONSTRAINT:: torsion_AB:    36.0  10.0  100  360.
+# CONSTRAINT::  torsion_B:  -171.1  10.0  100  360.
+
+CST::END
+
+#His chain B 649 interacting C8
+
+#CST::BEGIN
+# TEMPLATE::   ATOM_MAP: 1 atom_name: C8 N4 C9
+# TEMPLATE::   ATOM_MAP: 1 residue3: 1ov
+
+#  TEMPLATE::   ATOM_MAP: 2 atom_name: NE2 CE1 ND1
+#  TEMPLATE::   ATOM_MAP: 2 residue1: H
+
+# CONSTRAINT:: distanceAB:    5.0   0.3   100  0
+# CONSTRAINT::    angle_A:    90.0  10.0   10  360.
+# CONSTRAINT::    angle_B:    90.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:   174.7  10.0  100  360.
+# CONSTRAINT:: torsion_AB:  -117.6  10.0  100  360.
+# CONSTRAINT::  torsion_B:   176.8  10.0  100  360.
+
+#CST::END

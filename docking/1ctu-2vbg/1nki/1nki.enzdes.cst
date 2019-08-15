@@ -1,0 +1,184 @@
+# 1nki constraint file made on 102518
+
+#His 64 chain A coordinating to Mn
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: MN1 O5 C1
+  TEMPLATE::   ATOM_MAP: 1 residue3: 1nk
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: NE2 CD2 CG
+  TEMPLATE::   ATOM_MAP: 2 residue1: H
+
+  CONSTRAINT:: distanceAB:     2.09  0.3  100  1     
+  CONSTRAINT::    angle_A:    90.0  10.0   10  360. 
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360. 
+# CONSTRAINT::  torsion_A:  -130.3  10.0  100  360. 
+# CONSTRAINT:: torsion_AB:  -151.3  10.0  100  360. 
+# CONSTRAINT::  torsion_B:   178.6  10.0  100  360. 
+
+CST::END  
+
+#Glu 110 chain A coordinating to Mn
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: MN1 O1 P1
+  TEMPLATE::   ATOM_MAP: 1 residue3: 1nk
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OE1 CD OE2
+  TEMPLATE::   ATOM_MAP: 2 residue1: E
+
+  CONSTRAINT:: distanceAB:    2.09  0.3   100  1
+  CONSTRAINT::    angle_A:    90.0  10.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:  -174.1  10.0  100  360.
+# CONSTRAINT:: torsion_AB:    46.1  10.0  100  360.
+# CONSTRAINT::  torsion_B:     5.7  10.0  100  360.
+
+CST::END
+
+#His 141 chain B coordinating Mn
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: MN1 O1 C1
+  TEMPLATE::   ATOM_MAP: 1 residue3: 1nk
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: NE2 CD2 CG
+  TEMPLATE::   ATOM_MAP: 2 residue1: H
+
+  CONSTRAINT:: distanceAB:    2.12   0.3  100  1
+  CONSTRAINT::    angle_A:    90.0  10.0   10  360.
+  CONSTRAINT::    angle_B:   120.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:   110.6  10.0  100  360.
+# CONSTRAINT:: torsion_AB:    47.1  10.0  100  360.
+# CONSTRAINT::  torsion_B:   175.3  10.0  100  360.
+
+CST::END
+
+#Ser chain A 98 interacting with Glu chain A 110
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: OE2 CD OE1
+  TEMPLATE::   ATOM_MAP: 1 residue1: E
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OG CB CA
+  TEMPLATE::   ATOM_MAP: 2 residue1: S
+
+  CONSTRAINT:: distanceAB:    2.6   0.3   100  0
+  CONSTRAINT::    angle_A:   120.0  20.0   10  360.
+  CONSTRAINT::    angle_B:   109.5  10.0   10  360.
+# CONSTRAINT::  torsion_A:  -144.8  10.0  100  360.
+# CONSTRAINT:: torsion_AB:    13.8  10.0  100  360.
+# CONSTRAINT::  torsion_B:   125.4  10.0  100  360.
+
+CST::END
+
+
+#Asn 92 chain A cooridnating to K
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: V6 K1 V4
+  TEMPLATE::   ATOM_MAP: 1 residue3: k1n
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OD1 CG ND2
+  TEMPLATE::   ATOM_MAP: 2 residue1: N
+
+  CONSTRAINT:: distanceAB:    2.8   0.3   100  1
+  CONSTRAINT::    angle_A:   120.0  10.0   10  360.
+  CONSTRAINT::    angle_B:    90.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:    68.0  10.0  100  360.
+# CONSTRAINT:: torsion_AB:  -128.5  10.0  100  360.
+# CONSTRAINT::  torsion_B:  -177.1  10.0  100  360.
+
+CST::END
+
+#Ser 94 chain A coordinating to K
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: V3 K1 V5
+  TEMPLATE::   ATOM_MAP: 1 residue3: k1n
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OG CB CA
+  TEMPLATE::   ATOM_MAP: 2 residue1: S
+
+  CONSTRAINT:: distanceAB:     2.7   0.3  100  0
+  CONSTRAINT::    angle_A:   120.0  20.0   10  360.
+# CONSTRAINT::    angle_B:   109.5  10.0   10  360.
+# CONSTRAINT::  torsion_A:    68.0  10.0  100  360.
+# CONSTRAINT:: torsion_AB:  -128.5  10.0  100  360.
+# CONSTRAINT::  torsion_B:  -177.1  10.0  100  360.
+
+CST::END
+
+#Ser 94 backbone chain A coordinating to K
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: V2 K1 V4
+  TEMPLATE::   ATOM_MAP: 1 residue3: k1n
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: O C CA
+  TEMPLATE::   ATOM_MAP: 2 residue1: S
+
+  CONSTRAINT:: distanceAB:     3.0   0.3  100  0
+  CONSTRAINT::    angle_A:   120.0  25.0   10  360.
+# CONSTRAINT::    angle_B:   120.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:    68.0  10.0  100  360.
+# CONSTRAINT:: torsion_AB:  -128.5  10.0  100  360.
+# CONSTRAINT::  torsion_B:  -177.1  10.0  100  360.
+
+CST::END
+
+
+#Glu 95 chain A coordinating to K
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: V1 K1 V6
+  TEMPLATE::   ATOM_MAP: 1 residue3: k1n
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: O C N
+  TEMPLATE::   ATOM_MAP: 2 residue1: E
+
+  CONSTRAINT:: distanceAB:     3.0   0.3  100  0
+  CONSTRAINT::    angle_A:   120.0  20.0   10  360.
+# CONSTRAINT::    angle_B:    90.0  20.0   10  360.
+# CONSTRAINT::  torsion_A:    68.0  10.0  100  360.
+# CONSTRAINT:: torsion_AB:  -128.5  10.0  100  360.
+# CONSTRAINT::  torsion_B:  -177.1  10.0  100  360.
+
+CST::END
+
+#Gly 96 chain A coordinating to K
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: V4 K1 V2
+  TEMPLATE::   ATOM_MAP: 1 residue3: k1n
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: O	C CA
+  TEMPLATE::   ATOM_MAP: 2 residue1: G
+
+  CONSTRAINT:: distanceAB:     2.7   0.3  100  0
+  CONSTRAINT::    angle_A:   120.0  20.0   10  360.
+# CONSTRAINT::    angle_B:   120.0  15.0   10  360.
+# CONSTRAINT::  torsion_A:    68.0  10.0  100  360.
+# CONSTRAINT:: torsion_AB:  -128.5  10.0  100  360.
+# CONSTRAINT::  torsion_B:  -177.1  10.0  100  360.
+
+CST::END
+
+
+#Ser 98 chain A coordinating to K
+
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: V5 K1 V4
+  TEMPLATE::   ATOM_MAP: 1 residue3: k1n
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OG CB CA
+  TEMPLATE::   ATOM_MAP: 2 residue1: S
+
+  CONSTRAINT:: distanceAB:     2.8   0.3  100  0
+  CONSTRAINT::    angle_A:   180.0  25.0   10  360.
+# CONSTRAINT::    angle_B:    90.0  10.0   10  360.
+# CONSTRAINT::  torsion_A:    68.0  10.0  100  360.
+# CONSTRAINT:: torsion_AB:  -128.5  10.0  100  360.
+# CONSTRAINT::  torsion_B:  -177.1  10.0  100  360.
+
+CST::END

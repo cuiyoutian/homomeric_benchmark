@@ -1,0 +1,53 @@
+#1dqx cst file made on 072017
+
+#Lys chain B 360 interacting with oxygen on pyridine ring
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: O5 C9 N1
+  TEMPLATE::   ATOM_MAP: 1 residue3: 1dq
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: NZ CE CD
+  TEMPLATE::   ATOM_MAP: 2 residue1: K
+
+  CONSTRAINT:: distanceAB:     2.7   0.3  100  0     
+  CONSTRAINT::    angle_A:   120.0  10.0   10  360. 
+  CONSTRAINT::    angle_B:    90.0  10.0   10  360. 
+# CONSTRAINT::  torsion_A:   -89.3  10.0  100  360. 
+# CONSTRAINT:: torsion_AB:   -60.1  10.0  100  360. 
+# CONSTRAINT::  torsion_B:   163.3  10.0  100  360. 
+
+CST::END  
+
+#Lys chain B 360 interacting with Asp chain A 96
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: NZ CE CD
+  TEMPLATE::   ATOM_MAP: 1 residue3: LYS
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OD2 CG CB
+  TEMPLATE::   ATOM_MAP: 2 residue1: D
+
+  CONSTRAINT:: distanceAB:     2.5   0.3  100  0
+  CONSTRAINT::    angle_A:   109.5  10.0   10  360.
+  CONSTRAINT::    angle_B:   109.5  10.0   10  360.
+# CONSTRAINT::  torsion_A:    72.4  10.0  100  360.
+# CONSTRAINT:: torsion_AB:    40.8  10.0  100  360.
+# CONSTRAINT::  torsion_B:    51.2  10.0  100  360.
+
+CST::END
+
+#Lys chain B 360 interacting with Asp chain B 358
+CST::BEGIN
+  TEMPLATE::   ATOM_MAP: 1 atom_name: NZ CE CD
+  TEMPLATE::   ATOM_MAP: 1 residue3: LYS
+
+  TEMPLATE::   ATOM_MAP: 2 atom_name: OD1 CG CB
+  TEMPLATE::   ATOM_MAP: 2 residue1: D
+
+  CONSTRAINT:: distanceAB:     2.5   0.3  100  0
+  CONSTRAINT::    angle_A:   109.5  10.0   10  360.
+  CONSTRAINT::    angle_B:   109.5  10.0   10  360.
+# CONSTRAINT::  torsion_A:   -76.8  10.0  100  360.
+# CONSTRAINT:: torsion_AB:  -164.1  10.0  100  360.
+# CONSTRAINT::  torsion_B:    27.5  10.0  100  360.
+
+CST::END
+
