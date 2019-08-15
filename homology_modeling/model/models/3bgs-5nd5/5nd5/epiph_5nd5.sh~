@@ -1,0 +1,1 @@
+/share/siegellab/software/Rosetta_rf/main/source/bin/rosetta_scripts.default.linuxgccrelease -database /share/siegellab/software/Rosetta_rf/main/database @flags -in:file:fasta 5nd5.trim -parser:protocol hybridize.xml -frag3 5nd5_.200.3mers -frag9 5nd5_.200.9mers
