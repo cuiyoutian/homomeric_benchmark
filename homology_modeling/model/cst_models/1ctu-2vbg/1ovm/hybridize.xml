@@ -1,0 +1,38 @@
+
+<dock_design>
+   <TASKOPERATIONS>
+   </TASKOPERATIONS>
+   <SCOREFXNS>
+       <stage1 weights=stage1 symmetric=1>
+                       <Reweight scoretype=atom_pair_constraint weight=0.5/>
+               </stage1>
+       <stage2 weights=stage2 symmetric=1>
+                       <Reweight scoretype=atom_pair_constraint weight=0.5/>
+               </stage2>
+       <fullatom weights=stage3 symmetric=1>
+                       <Reweight scoretype=atom_pair_constraint weight=0.5/>
+               </fullatom>
+   </SCOREFXNS>
+ <FILTERS>
+   </FILTERS>
+   <MOVERS>
+   <Hybridize name=hybridize fa_cst_file="alignment.grishin.dist_csts.CA" stage1_scorefxn=stage1 stage2_scorefxn=stage2 fa_scorefxn=fullatom batch=1 stage1_increase_cycles=1.0 stage2_increase_cycles=1.0 linmin_only=1>; 
+ <Template pdb="/path/to/templates/1ovm/2vbf_INPUT.pdb.pdb" cst_file="alignment.grishin.dist_csts.CA" weight=1.00 symmdef="/path/to/templates/1ovm/2vbf.symm" />"; 
+ <Template pdb="/path/to/templates/1ovm/2vjy_INPUT.pdb.pdb" cst_file="alignment.grishin.dist_csts.CA" weight=0.91 symmdef="/path/to/templates/1ovm/2vbf.symm" />"; 
+ <Template pdb="/path/to/templates/1ovm/1qpb_INPUT.pdb.pdb" cst_file="alignment.grishin.dist_csts.CA" weight=0.89 symmdef="/path/to/templates/1ovm/2vbf.symm" />"; 
+ <Template pdb="/path/to/templates/1ovm/2vk1_INPUT.pdb.pdb" cst_file="alignment.grishin.dist_csts.CA" weight=0.88 symmdef="/path/to/templates/1ovm/2vbf.symm" />"; 
+ <Template pdb="/path/to/templates/1ovm/2vk8_INPUT.pdb.pdb" cst_file="alignment.grishin.dist_csts.CA" weight=0.88 symmdef="/path/to/templates/1ovm/2vbf.symm" />"; 
+ <Template pdb="/path/to/templates/1ovm/2w93_INPUT.pdb.pdb" cst_file="alignment.grishin.dist_csts.CA" weight=0.88 symmdef="/path/to/templates/1ovm/2vbf.symm" />"; 
+ <Template pdb="/path/to/templates/1ovm/1pvd_INPUT.pdb.pdb" cst_file="alignment.grishin.dist_csts.CA" weight=0.87 symmdef="/path/to/templates/1ovm/2vbf.symm" />"; 
+ <Template pdb="/path/to/templates/1ovm/1pyd_INPUT.pdb.pdb" cst_file="alignment.grishin.dist_csts.CA" weight=0.87 symmdef="/path/to/templates/1ovm/2vbf.symm" />"; 
+ <Template pdb="/path/to/templates/1ovm/4cok_INPUT.pdb.pdb" cst_file="alignment.grishin.dist_csts.CA" weight=0.78 symmdef="/path/to/templates/1ovm/2vbf.symm" />"; 
+ <Template pdb="/path/to/templates/1ovm/1zpd_INPUT.pdb.pdb" cst_file="alignment.grishin.dist_csts.CA" weight=0.75 symmdef="/path/to/templates/1ovm/2vbf.symm" />"; 
+
+       </Hybridize>
+   </MOVERS>
+   <APPLY_TO_POSE>
+   </APPLY_TO_POSE>
+   <PROTOCOLS>
+       <Add mover=hybridize/>
+   </PROTOCOLS>
+</dock_design>"; 
