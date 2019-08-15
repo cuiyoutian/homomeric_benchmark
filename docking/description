@@ -1,7 +1,5 @@
 lignad_mappings: text showing the heavy atom mappings of the ligand crystal strucutre:model to determine the ligand RMSD
 
-models/: folder with all the files used for docking 16 enzymes in benchmark
-
 
 files:
 *.enzdes.cst: constraint file with the enzymatic constraints used in docking
@@ -11,6 +9,6 @@ files:
 
 flags: file containing the Rosetta options used in docking
 
-model.pdb: model to be used for docking. This includes the header that specifies the residues to be used from the enzdes.cst file and information about the ligand coordinates.
+model.pdb: model to be used for docking. This includes the header that specifies the residues to be used from the enzdes.cst file and information about the ligand coordinates at the bottom.
 
 run.sh: submission script to run docking
