@@ -1,3 +1,0 @@
-*model.pdb: model output for runs without the CG constraints
-
-*cst_model.pdb: model output for runs with the CG constraints
