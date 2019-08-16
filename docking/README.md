@@ -4,7 +4,7 @@ ligand_mappings: text showing the heavy atom mappings of the ligand crystal stru
 files:
 *.enzdes.cst: constraint file with the enzymatic constraints used in docking
 *_docking.xml: docking protocol used
-*_conformers.pdb: the conformational library of the ligands
+*_conformers.pdb (or *_conformers.tar.gz): the conformational library of the ligands
 *.params: params file for docking
 
 flags: file containing the Rosetta options used in docking
