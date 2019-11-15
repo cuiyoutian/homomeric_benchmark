@@ -1,6 +1,6 @@
 **templates:** folder that contains the threaded pdbs of the templates used for each enzyme in the benchmark and the symm def file of the top template
 
-**model/models:** folder for the 16 enzymes in the benchmark with the files needed to make models
+**model/models:** folder for the 17 enzymes in the benchmark with the files needed to make models
 
 files: \
 *.trim: trim version of the enzymes sequence \
@@ -16,7 +16,7 @@ flags: Rosetta options used for modeling
 epiph*: submission script for modeling
 
 
-**model/cst_models:** folder for the 16 enzymes in the benchmark with the files needed to make models
+**model/cst_models:** folder for the 17 enzymes in the benchmark with the files needed to make models
 
 files: \
 *.trim: trim version of the enzymes sequence \
